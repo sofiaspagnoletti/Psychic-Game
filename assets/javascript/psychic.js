@@ -34,7 +34,7 @@ function resetGame() {
 function writeGameStatus() {
     document.querySelector("#wins").innerHTML = "Wins: " + wins;
     document.querySelector("#losses").innerHTML = "Losses: " + losses;
-    document.querySelector("#guesses-left").innerHTML = "Guesses Left:" + numGuesses;
+    document.querySelector("#guesses-left").innerHTML = "Guesses Left: " + numGuesses;
     document.querySelector("#guesses").innerHTML = "Your Guesses so far: " + guessChoices.join(", ");
 }
 
