@@ -29,6 +29,7 @@ function lose() {
 function resetGame() {
     numGuesses = 10;
     guessChoices = [];
+    computerGuess = getRandomLetter();
 }
 
 function writeGameStatus() {
@@ -38,11 +39,11 @@ function writeGameStatus() {
     document.querySelector("#guesses").innerHTML = "Your Guesses so far: " + guessChoices.join(", ");
 }
 
+var computrGuess = getRandomLetter();
+
 document.onkeyup = function (event) {
 
     var userGuess = event.key;
-
-    var computerGuess = getRandomLetter();
 
     // Only calculate if the user entered a valid key.
     if (isUserInputValid(userGuess)) {
