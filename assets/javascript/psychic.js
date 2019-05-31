@@ -1,3 +1,5 @@
+
+
 var allOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
 
 var wins = 0;
@@ -39,7 +41,7 @@ function writeGameStatus() {
     document.querySelector("#guesses").innerHTML = "Your Guesses so far: " + guessChoices.join(", ");
 }
 
-var computrGuess = getRandomLetter();
+var computerGuess = getRandomLetter();
 
 document.onkeyup = function (event) {
 
